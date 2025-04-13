@@ -1,0 +1,335 @@
+{
+  // === VSCode UI Ayarları ===
+  "window.commandCenter": 1,
+  "workbench.colorTheme": "MoonGun Dark Cool Py",
+  "workbench.iconTheme": "material-icon-theme",
+  "files.autoSave": "afterDelay",
+  "editor.fontSize": 15,
+  "editor.tabSize": 6,
+  // === Python Formatter ===
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true
+  },
+  // === Vim Modu ===
+  "vim.useCtrlKeys": true,
+  "vim.leader": "<space>",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // Makrolar
+    {
+      "before": [
+        "<C-u>"
+      ],
+      "after": [
+        "y",
+        "y",
+        "d",
+        "d",
+        "k",
+        "P"
+      ]
+    },
+    {
+      "before": [
+        "<C-d>"
+      ],
+      "after": [
+        "y",
+        "y",
+        "d",
+        "d",
+        "j",
+        "P"
+      ]
+    },
+    // Tab işlemleri
+    {
+      "before": [
+        "t",
+        "e"
+      ],
+      "commands": [
+        ":tabnew"
+      ]
+    },
+    {
+      "before": [
+        "<Tab>"
+      ],
+      "commands": [
+        ":bnext"
+      ]
+    },
+    {
+      "before": [
+        "<S-Tab>"
+      ],
+      "commands": [
+        ":bprevious"
+      ]
+    },
+    // Sekme işlemleri
+    {
+      "before": [
+        "<leader>",
+        "q"
+      ],
+      "commands": [
+        "workbench.action.closeActiveEditor"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "d"
+      ],
+      "commands": [
+        ":bd"
+      ]
+    },
+    // Dosya / arama / gezgin
+    {
+      "before": [
+        "<leader>",
+        "e"
+      ],
+      "commands": [
+        "workbench.action.toggleSidebarVisibility"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "f"
+      ],
+      "commands": [
+        "workbench.action.quickOpen"
+      ]
+    },
+    // Split
+    {
+      "before": [
+        "|"
+      ],
+      "commands": [
+        ":vsplit"
+      ]
+    },
+    {
+      "before": [
+        "_"
+      ],
+      "commands": [
+        ":split"
+      ]
+    },
+    // Odak geçişleri (Tmux tarzı)
+    {
+      "before": [
+        "<C-h>"
+      ],
+      "commands": [
+        "workbench.action.focusLeftGroup"
+      ]
+    },
+    {
+      "before": [
+        "<C-l>"
+      ],
+      "commands": [
+        "workbench.action.focusRightGroup"
+      ]
+    },
+    {
+      "before": [
+        "<C-j>"
+      ],
+      "commands": [
+        "workbench.action.focusBelowGroup"
+      ]
+    },
+    {
+      "before": [
+        "<C-k>"
+      ],
+      "commands": [
+        "workbench.action.focusAboveGroup"
+      ]
+    },
+    // Panel yeniden boyutlandırma
+    {
+      "before": [
+        "<A-Left>"
+      ],
+      "commands": [
+        "workbench.action.decreaseViewWidth"
+      ]
+    },
+    {
+      "before": [
+        "<A-Right>"
+      ],
+      "commands": [
+        "workbench.action.increaseViewWidth"
+      ]
+    },
+    {
+      "before": [
+        "<A-Up>"
+      ],
+      "commands": [
+        "workbench.action.increaseViewHeight"
+      ]
+    },
+    {
+      "before": [
+        "<A-Down>"
+      ],
+      "commands": [
+        "workbench.action.decreaseViewHeight"
+      ]
+    }
+  ],
+  "vim.insertModeKeyBindings": [],
+  "vim.visualModeKeyBindingsNonRecursive": [],
+  // === VSpaceCode Which-Key Tarzı Gruplar ===
+  "vspacecode.bindingOverrides": [
+    {
+      "keys": "f",
+      "name": "Find",
+      "type": "group",
+      "bindings": [
+        {
+          "keys": "f",
+          "name": "Find File",
+          "type": "command",
+          "command": "workbench.action.quickOpen"
+        },
+        {
+          "keys": "r",
+          "name": "Recent Files",
+          "type": "command",
+          "command": "workbench.action.openRecent"
+        },
+        {
+          "keys": "s",
+          "name": "Search in Files",
+          "type": "command",
+          "command": "workbench.action.findInFiles"
+        }
+      ]
+    },
+    {
+      "keys": "g",
+      "name": "Git",
+      "type": "group",
+      "bindings": [
+        {
+          "keys": "s",
+          "name": "Source Control",
+          "type": "command",
+          "command": "workbench.view.scm"
+        },
+        {
+          "keys": "c",
+          "name": "Commit",
+          "type": "command",
+          "command": "git.commit"
+        },
+        {
+          "keys": "p",
+          "name": "Push",
+          "type": "command",
+          "command": "git.push"
+        },
+        {
+          "keys": "f",
+          "name": "Fetch",
+          "type": "command",
+          "command": "git.fetch"
+        }
+      ]
+    },
+    {
+      "keys": "x",
+      "name": "Terminal",
+      "type": "group",
+      "bindings": [
+        {
+          "keys": "t",
+          "name": "Toggle Terminal",
+          "type": "command",
+          "command": "workbench.action.terminal.toggleTerminal"
+        },
+        {
+          "keys": "n",
+          "name": "New Terminal",
+          "type": "command",
+          "command": "workbench.action.terminal.new"
+        },
+        {
+          "keys": "c",
+          "name": "Kill Terminal",
+          "type": "command",
+          "command": "workbench.action.terminal.kill"
+        }
+      ]
+    },
+    {
+      "keys": "s",
+      "name": "Refactor & Format",
+      "type": "group",
+      "bindings": [
+        {
+          "keys": "r",
+          "name": "Rename Symbol",
+          "type": "command",
+          "command": "editor.action.rename"
+        },
+        {
+          "keys": "f",
+          "name": "Format Document",
+          "type": "command",
+          "command": "editor.action.formatDocument"
+        },
+        {
+          "keys": "i",
+          "name": "Organize Imports",
+          "type": "command",
+          "command": "editor.action.organizeImports"
+        }
+      ]
+    },
+    {
+      "keys": "w",
+      "name": "Window & Files",
+      "type": "group",
+      "bindings": [
+        {
+          "keys": "s",
+          "name": "Save",
+          "type": "command",
+          "command": "workbench.action.files.save"
+        },
+        {
+          "keys": "a",
+          "name": "Save All",
+          "type": "command",
+          "command": "workbench.action.files.saveAll"
+        },
+        {
+          "keys": "q",
+          "name": "Close Window",
+          "type": "command",
+          "command": "workbench.action.closeActiveEditor"
+        }
+      ]
+    },
+    {
+      "keys": "/",
+      "name": "Toggle Comment",
+      "type": "command",
+      "command": "editor.action.commentLine"
+    }
+  ]
+}
