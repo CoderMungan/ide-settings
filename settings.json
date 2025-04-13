@@ -1,5 +1,5 @@
 {
-  // === VSCode UI Ayarları ===
+  // === VSCode UI Settings===
   "window.commandCenter": 1,
   "workbench.colorTheme": "MoonGun Dark Cool Py",
   "workbench.iconTheme": "material-icon-theme",
@@ -11,11 +11,11 @@
     "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.formatOnSave": true
   },
-  // === Vim Modu ===
+  // === Vim Mode ===
   "vim.useCtrlKeys": true,
   "vim.leader": "<space>",
   "vim.normalModeKeyBindingsNonRecursive": [
-    // Makrolar
+    // Macros 
     {
       "before": [
         "<C-u>"
@@ -42,7 +42,7 @@
         "P"
       ]
     },
-    // Tab işlemleri
+    // Tab Control 
     {
       "before": [
         "t",
@@ -68,7 +68,7 @@
         ":bprevious"
       ]
     },
-    // Sekme işlemleri
+    // Tab Control 
     {
       "before": [
         "<leader>",
@@ -87,7 +87,7 @@
         ":bd"
       ]
     },
-    // Dosya / arama / gezgin
+    // File / Search / Panel 
     {
       "before": [
         "<leader>",
@@ -123,7 +123,7 @@
         ":split"
       ]
     },
-    // Odak geçişleri (Tmux tarzı)
+    // Panel focus 
     {
       "before": [
         "<C-h>"
@@ -156,7 +156,7 @@
         "workbench.action.focusAboveGroup"
       ]
     },
-    // Panel yeniden boyutlandırma
+    // Resize 
     {
       "before": [
         "<A-Left>"
@@ -188,11 +188,11 @@
       "commands": [
         "workbench.action.decreaseViewHeight"
       ]
-    }
+    },
   ],
   "vim.insertModeKeyBindings": [],
   "vim.visualModeKeyBindingsNonRecursive": [],
-  // === VSpaceCode Which-Key Tarzı Gruplar ===
+  // === VSpaceCode Which-Key Group ===
   "vspacecode.bindingOverrides": [
     {
       "keys": "f",
