@@ -1,11 +1,16 @@
 {
   // === VSCode UI Settings===
   "window.commandCenter": 1,
-  "workbench.colorTheme": "MoonGun Dark Cool Py",
+  "workbench.colorTheme": "1mm - Dracula",
   "workbench.iconTheme": "material-icon-theme",
   "files.autoSave": "afterDelay",
   "editor.fontSize": 15,
-  // "editor.tabSize": 6,
+  "editor.tabSize": 6,
+  "workbench.tree.indent": 24,
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.colorCustomizations": {
+    "tree.indentGuidesStroke": "#8a8a8a",
+  },
   // === Python Formatter ===
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
