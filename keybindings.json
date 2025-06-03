@@ -156,5 +156,9 @@
             "key": "ctrl+l",
             "command": "file-browser.stepIn",
             "when": "inFileBrowser"
+      },
+      {
+      "key": "ctrl+/",
+      "command": "workbench.action.terminal.toggleTerminal"
       }
 ]
