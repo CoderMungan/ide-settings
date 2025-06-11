@@ -336,5 +336,8 @@
       "type": "command",
       "command": "editor.action.commentLine"
     }
-  ]
+  ],
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
