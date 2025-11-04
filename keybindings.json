@@ -164,5 +164,17 @@
   {
     "key": "ctrl+.",
     "command": "workbench.panel.chat"
-  }
+},
+{
+    "key": "shift+enter",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+        "text": "\\\r\n"
+    },
+    "when": "terminalFocus"
+},
+{
+  "key": "cmd+shift+c",
+  "command": "claude-code.runClaude"
+}
 ]
