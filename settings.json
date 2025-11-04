@@ -1,10 +1,10 @@
 {
   // === VSCode UI Settings===
   "window.commandCenter": 1,
-  "workbench.colorTheme": "1mm - Dracula",
+  "workbench.colorTheme": "MoonGun Dark Cool Py",
   "workbench.iconTheme": "material-icon-theme",
   "files.autoSave": "afterDelay",
-  "editor.fontSize": 15,
+  "editor.fontSize": 16,
   "workbench.tree.indent": 24,
   "workbench.tree.renderIndentGuides": "always",
   "workbench.colorCustomizations": {
@@ -341,5 +341,21 @@
   },
   "workbench.activityBar.location": "bottom",
   "database-client.autoSync": true,
-  "terminal.integrated.env.osx": {}
+  "terminal.integrated.env.osx": {},
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "vscode-pets.petSize": "small",
+  "vscode-pets.petType": "snake",
+  "vscode-pets.theme": "beach",
+  "vscode-pets.petColor": "warrior",
+  "python.defaultInterpreterPath": "/usr/local/bin/python3",
+  "editor.fontFamily": "IBM Plex Mono, Inter",
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.fontFamily": "MesloLGL Nerd Font Mono",
+  "terminal.integrated.fontSize": 15,
+  "editor.accessibilityPageSize": 600,
 }
