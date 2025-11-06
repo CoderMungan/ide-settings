@@ -350,7 +350,7 @@
   "vscode-pets.theme": "beach",
   "vscode-pets.petColor": "warrior",
   "python.defaultInterpreterPath": "/usr/local/bin/python3",
-  "editor.fontFamily": "IBM Plex Mono, Inter",
+  "editor.fontFamily": "MartianMono Nerd Font Propo",
   "github.copilot.nextEditSuggestions.enabled": true,
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -358,4 +358,8 @@
   "terminal.integrated.fontFamily": "MesloLGL Nerd Font Mono",
   "terminal.integrated.fontSize": 15,
   "editor.accessibilityPageSize": 600,
+  "chat.instructionsFilesLocations": {
+    ".github/instructions": true,
+    "/Users/grafik/.aitk/instructions/": true
+  },
 }
