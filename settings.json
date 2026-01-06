@@ -1,5 +1,6 @@
 {
   // === VSCode UI Settings===
+  "editor.renderWhitespace": "all",
   "window.commandCenter": 1,
   "workbench.colorTheme": "MoonGun Dark Cool Py",
   "workbench.iconTheme": "material-icon-theme",
